@@ -1,6 +1,12 @@
+"""This python file takes in input the  border crossing data from
+Bureau of Transportation Statistics as csv data file 
+and gives out a csv file containing counts of number of vehicles 
+crossing the US-Canada Border and US-Mexico Border each month along
+with the running averages for each month."""
+
 import sys
 
-
+# Adds data from the csv file to a dictionary
 def adding_in_dictionary(x, y, z, dict_, USorMEX):
     if x not in dict_[USorMEX]:
         dict_[USorMEX][x] = list()
@@ -8,7 +14,7 @@ def adding_in_dictionary(x, y, z, dict_, USorMEX):
     else:
         dict_[USorMEX][x].append([y, z])
 
-
+#Calculates the cummulative sum of each months count of type of vehicles
 def calculate_cummulative_sum(index):
     for l in sorted_dates[index]:
         for m in dict1[k][l]:
@@ -59,12 +65,14 @@ if __name__ == '__main__':
                     else:
                         d[m[0]] += m[1]
                 dict1[k][l] = d
-
+                
+        #Adding the count of each type of crossing for each month as a list to the dictionary
         for k in dict1:
             for l in dict1[k]:
                 for m in dict1[k][l]:
                     dict1[k][l][m] = [dict1[k][l][m]]
-
+        
+        #Sorting the dates beforehand to calculate the running monthly average
         sorted_dates = []
         us_list = []
         mex_list = []
@@ -91,7 +99,8 @@ if __name__ == '__main__':
                         dict1[k][l][m].append(0)
 
         import math
-
+        
+        #Collecting data from the dictionary created and appending desired output to a list of lists
         output = []
         for k in dict1:
             for l in dict1[k]:
@@ -107,7 +116,8 @@ if __name__ == '__main__':
                             a = 0
                         output.append(
                             str(l) + ',' + str(k) + ',' + str(m) + ',' + str(dict1[k][l][m][0]) + ',' + str(a))
-
+        
+        # Sorting data in based on the sorting criteria given
         result = []
         for i in output:
             i = i.strip().split(",")
@@ -115,7 +125,8 @@ if __name__ == '__main__':
         result = sorted(result, key=lambda x: (x[0], int(x[3]), x[2], x[1]), reverse=True)
 
         output_param = sys.argv[2]
-
+        
+        #Writing the data to a csv file besides formating data for readability and prevent loss of originality of the data.
         file = open(output_param, 'w+')
         file.write("Border,Date,Measure,Value,Average\n")
         for i in result:
