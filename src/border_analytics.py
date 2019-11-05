@@ -66,11 +66,17 @@ if __name__ == '__main__':
                     dict1[k][l][m] = [dict1[k][l][m]]
 
         sorted_dates = []
+        us_list = []
+        mex_list = []
         for k in dict1:
-            in_list = []
-            for l in dict1[k]:
-                in_list.append(l)
-            sorted_dates.append(sorted(in_list))
+            if k == 'US':
+                for l in dict1[k]:
+                    us_list.append(l)
+            else:
+                for l in dict1[k]:
+                    mex_list.append(l)
+        sorted_dates.append(sorted(us_list))
+        sorted_dates.append(sorted(mex_list))
 
         for k in dict1:
             if k == 'US':
