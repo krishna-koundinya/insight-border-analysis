@@ -1,0 +1,25 @@
+Port Name,State,Port Code,Border,Date,Measure,Value,Location
+Warroad,Minnesota,3423,US-Canada Border,6/1/2019 0:00,Truck Containers Full,133,0
+Warroad,Minnesota,3423,US-Canada Border,6/1/2019 0:00,Truck Containers Empty,298,1
+Warroad,Minnesota,3423,US-Canada Border,6/1/2019 0:00,Personal Vehicles,10383,1
+Warroad,Minnesota,3423,US-Canada Border,6/1/2019 0:00,Personal Vehicle Passengers,19459,0
+Warroad,Minnesota,3423,US-Canada Border,6/1/2019 0:00,Pedestrians,2,1
+Warroad,Minnesota,3423,US-Canada Border,6/1/2019 0:00,Buses,3,2
+Warroad,Minnesota,3423,US-Canada Border,6/1/2019 0:00,Bus Passengers,63,2
+Roseau,Minnesota,3426,US-Canada Border,6/1/2019 0:00,Trucks,290,2
+Roseau,Minnesota,3426,US-Canada Border,6/1/2019 0:00,Truck Containers Full,110,0
+Roseau,Minnesota,3426,US-Canada Border,6/1/2019 0:00,Truck Containers Empty,182,1
+Roseau,Minnesota,3426,US-Canada Border,6/1/2019 0:00,Personal Vehicles,3964,2
+Roseau,Minnesota,3426,US-Canada Border,6/1/2019 0:00,Personal Vehicle Passengers,7385,1
+Roseau,Minnesota,3426,US-Canada Border,6/1/2019 0:00,Buses,4,2
+Roseau,Minnesota,3426,US-Canada Border,6/1/2019 0:00,Bus Passengers,118,0
+Detroit,Michigan,3801,US-Canada Border,6/1/2019 0:00,Personal Vehicle Passengers,599521,1
+Detroit,Michigan,3801,US-Canada Border,6/1/2019 0:00,Buses,615,0
+Detroit,Michigan,3801,US-Canada Border,6/1/2019 0:00,Bus Passengers,6274,2
+Del Rio,Texas,2302,US-Mexico Border,6/1/2019 0:00,Pedestrians,14898,0
+Del Rio,Texas,2302,US-Mexico Border,6/1/2019 0:00,Personal Vehicles,123068,2
+Del Rio,Texas,2302,US-Mexico Border,6/1/2019 0:00,Personal Vehicle Passengers,238721,1
+Anacortes,Washington,3010,US-Canada Border,6/1/2019 0:00,Personal Vehicles,3438,0
+Anacortes,Washington,3010,US-Canada Border,6/1/2019 0:00,Personal Vehicle Passengers,8348,2
+Sumas,Washington,3009,US-Canada Border,6/1/2019 0:00,Trucks,13337,2
+Sumas,Washington,3009,US-Canada Border,6/1/2019 0:00,Truck Containers Full,10799,1
